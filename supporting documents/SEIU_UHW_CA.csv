@@ -1,0 +1,8 @@
+shapeid,lon,lat,SEIU UHW,Address,City,State,Country,Phone,addrtype,addrlocat
+1,-122.2712147,37.8099491,Oakland,"560 Thomas L Berkley Way, Oakland, CA 94612",Oakland,CA,US,(510) 251-1250,street_address,ROOFTOP
+2,-118.1558791,34.0101001,Los Angeles,"5480 Ferguson Drive, Los Angeles, CA 90022",Los Angeles,CA,US,(323) 734-8399,premise,ROOFTOP
+3,-119.7783412,36.8092857,Fresno,"550 East Shaw Avenue, Suite 215, Fresno, CA 93710",Fresno,CA,US,(559) 265-4890,subpremise,ROOFTOP
+4,-121.4786899,38.5815241,Sacramento,"1911 F Street, Sacramento, CA 95811",Sacramento,CA,US,(916) 326-5850,premise,ROOFTOP
+5,-122.4038752,37.7885118,San Francisco,"47 Kearny Street, 4th Floor, San Francisco, CA 94108",San Francisco,CA,US,(415) 441-2500,subpremise,ROOFTOP
+6,-121.9465778,37.3162415,San Jose,"2995 Moorpark Ave, San Jose, CA 95128",San Jose,CA,US,(408) 557-2835,premise,ROOFTOP
+7,-121.3068893,37.9988343,Stockton,"37 W. Yokuts Ave, Suite A-3, Stockton, CA 95207",Stockton,CA,US,(209) 944-8001,subpremise,ROOFTOP

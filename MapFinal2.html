@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8abba250da5348899752b89e2ff7e3cd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    
+                <style>
+                    #float_image_d2ac8182ad9a4a1d9dbb8889464f093c {
+                        position:absolute;
+                        bottom:8%;
+                        left:4%;
+                        }
+                </style>
+            
+    
+                <style>
+                    #float_image_7d0405353f904528b6c3a761a65b33f8 {
+                        position:absolute;
+                        bottom:0.5%;
+                        left:4%;
+                        }
+                </style>
+            
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8abba250da5348899752b89e2ff7e3cd" ></div>
+        
+    
+            <img id="float_image_d2ac8182ad9a4a1d9dbb8889464f093c" alt="float_image"
+                 src="https://i.imgur.com/WTmLCbc.png"
+                 style="z-index: 999999">
+            </img>
+            
+    
+            <img id="float_image_7d0405353f904528b6c3a761a65b33f8" alt="float_image"
+                 src="https://i.imgur.com/mJgkwHV.png"
+                 style="z-index: 999999">
+            </img>
+            
+</body>
+<script>    
+    
+            var map_8abba250da5348899752b89e2ff7e3cd = L.map(
+                "map_8abba250da5348899752b89e2ff7e3cd",
+                {
+                    center: [34.06, -118.29],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2279dece57394bbf8eceb9a1a7ab705d = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8abba250da5348899752b89e2ff7e3cd);
+        
+    
+            var marker_dedc2200560d4d9a82c2065ee268f89b = L.marker(
+                [34.06, -118.29],
+                {}
+            ).addTo(map_8abba250da5348899752b89e2ff7e3cd);
+        
+    
+            var icon_9ec70480f8e642bb9717fa4865ab7f18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_dedc2200560d4d9a82c2065ee268f89b.setIcon(icon_9ec70480f8e642bb9717fa4865ab7f18);
+        
+    
+        var popup_e2f35ac035d447978496dadf2490be9b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_13a56251846b454a86a746860b3d324a = $(`<div id="html_13a56251846b454a86a746860b3d324a" style="width: 100.0%; height: 100.0%;"><strong>Your Input Location:3041 West 7th Street, Los Angeles, CA 90005, United States of America</strong></div>`)[0];
+            popup_e2f35ac035d447978496dadf2490be9b.setContent(html_13a56251846b454a86a746860b3d324a);
+        
+
+        marker_dedc2200560d4d9a82c2065ee268f89b.bindPopup(popup_e2f35ac035d447978496dadf2490be9b)
+        ;
+
+        
+    
+    
+        function geo_json_477d87fa904644cc8542d3dde8f67ac6_onEachFeature(feature, layer) {
+            layer.on({
+                click: function(e) {
+                    map_8abba250da5348899752b89e2ff7e3cd.fitBounds(e.target.getBounds());
+                }
+            });
+        };
+        var geo_json_477d87fa904644cc8542d3dde8f67ac6 = L.geoJson(null, {
+                onEachFeature: geo_json_477d87fa904644cc8542d3dde8f67ac6_onEachFeature,
+            
+        }).addTo(map_8abba250da5348899752b89e2ff7e3cd);
+            geo_json_477d87fa904644cc8542d3dde8f67ac6.addData({"bbox": [-118.334716, 34.029787, -118.257365, 34.092283], "features": [{"geometry": {"coordinates": [[[-118.334716, 34.064992], [-118.334199, 34.057231], [-118.331997, 34.049781], [-118.329823, 34.045908], [-118.326667, 34.044174], [-118.31798, 34.03811], [-118.307494, 34.035579], [-118.300915, 34.031878], [-118.292055, 34.029787], [-118.291562, 34.029787], [-118.28413, 34.032364], [-118.275873, 34.034771], [-118.270646, 34.035791], [-118.263218, 34.044906], [-118.263133, 34.045039], [-118.262155, 34.046686], [-118.259826, 34.052556], [-118.259816, 34.0541], [-118.259833, 34.054978], [-118.258557, 34.066762], [-118.257984, 34.067419], [-118.257975, 34.067449], [-118.257365, 34.070159], [-118.26113, 34.077981], [-118.262437, 34.079784], [-118.26392, 34.081574], [-118.263984, 34.081604], [-118.269921, 34.084179], [-118.273341, 34.084839], [-118.28375, 34.090095], [-118.284517, 34.090509], [-118.284743, 34.09051], [-118.289778, 34.087447], [-118.298676, 34.090718], [-118.300493, 34.092014], [-118.305173, 34.092283], [-118.308255, 34.090422], [-118.309579, 34.083965], [-118.314915, 34.07803], [-118.315327, 34.077786], [-118.316409, 34.076403], [-118.3202, 34.071085], [-118.327336, 34.068944], [-118.328088, 34.068933], [-118.329127, 34.068682], [-118.333762, 34.066736], [-118.334336, 34.065907], [-118.334533, 34.065452], [-118.334557, 34.065395], [-118.334716, 34.064992]]], "type": "Polygon"}, "properties": {"center": [-118.28999919154307, 34.05977753302955], "group_index": 0, "value": 420.0}, "type": "Feature"}], "metadata": {"attribution": "openrouteservice.org | OpenStreetMap contributors", "engine": {"build_date": "2019-05-29T14:22:56Z", "version": "5.0.1"}, "query": {"interval": 420.0, "locations": [[-118.29, 34.06]], "range": [420.0], "range_type": "time"}, "service": "isochrones", "timestamp": 1562953862901}, "type": "FeatureCollection"});
+        
+    
+        function geo_json_471bd2be4ea14a858e702d0f4f3349cf_onEachFeature(feature, layer) {
+            layer.on({
+                click: function(e) {
+                    map_8abba250da5348899752b89e2ff7e3cd.fitBounds(e.target.getBounds());
+                }
+            });
+        };
+        var geo_json_471bd2be4ea14a858e702d0f4f3349cf = L.geoJson(null, {
+                onEachFeature: geo_json_471bd2be4ea14a858e702d0f4f3349cf_onEachFeature,
+            
+        }).addTo(map_8abba250da5348899752b89e2ff7e3cd);
+            geo_json_471bd2be4ea14a858e702d0f4f3349cf.addData({"coordinates": [[[-118.334716, 34.064992], [-118.334199, 34.057231], [-118.331997, 34.049781], [-118.329823, 34.045908], [-118.326667, 34.044174], [-118.31798, 34.03811], [-118.307494, 34.035579], [-118.300915, 34.031878], [-118.292055, 34.029787], [-118.291562, 34.029787], [-118.28413, 34.032364], [-118.275873, 34.034771], [-118.270646, 34.035791], [-118.263218, 34.044906], [-118.263133, 34.045039], [-118.262155, 34.046686], [-118.259826, 34.052556], [-118.259816, 34.0541], [-118.259833, 34.054978], [-118.258557, 34.066762], [-118.257984, 34.067419], [-118.257975, 34.067449], [-118.257365, 34.070159], [-118.26113, 34.077981], [-118.262437, 34.079784], [-118.26392, 34.081574], [-118.263984, 34.081604], [-118.269921, 34.084179], [-118.273341, 34.084839], [-118.28375, 34.090095], [-118.284517, 34.090509], [-118.284743, 34.09051], [-118.289778, 34.087447], [-118.298676, 34.090718], [-118.300493, 34.092014], [-118.305173, 34.092283], [-118.308255, 34.090422], [-118.309579, 34.083965], [-118.314915, 34.07803], [-118.315327, 34.077786], [-118.316409, 34.076403], [-118.3202, 34.071085], [-118.327336, 34.068944], [-118.328088, 34.068933], [-118.329127, 34.068682], [-118.333762, 34.066736], [-118.334336, 34.065907], [-118.334533, 34.065452], [-118.334557, 34.065395], [-118.334716, 34.064992]]], "type": "Polygon"});
+        
+    
+            var marker_de3ae19c69cd484ca5229da8b85f0dba = L.marker(
+                [34.062090500000004, -118.30194679999998],
+                {}
+            ).addTo(map_8abba250da5348899752b89e2ff7e3cd);
+        
+    
+            var icon_07fd48c45bf648b9bf20bf2616bba934 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "darkpurple", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_de3ae19c69cd484ca5229da8b85f0dba.setIcon(icon_07fd48c45bf648b9bf20bf2616bba934);
+        
+    
+        var popup_438ee65897ca4283ae59f5bcc96f230a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea74b66210bb4e4e916591486b4ff810 = $(`<div id="html_ea74b66210bb4e4e916591486b4ff810" style="width: 100.0%; height: 100.0%;"><strong>Clinics within 7 minute(s) of driving</strong>: FMC-DIALYSIS SERVICES OF MID-WILSHIRE at 3545 WILSHIRE BLVD., SUITE 100-103</div>`)[0];
+            popup_438ee65897ca4283ae59f5bcc96f230a.setContent(html_ea74b66210bb4e4e916591486b4ff810);
+        
+
+        marker_de3ae19c69cd484ca5229da8b85f0dba.bindPopup(popup_438ee65897ca4283ae59f5bcc96f230a)
+        ;
+
+        
+    
+    
+            var marker_654fc1e92d2349ad9bed4b51caaddcb3 = L.marker(
+                [34.052997399999995, -118.2655215],
+                {}
+            ).addTo(map_8abba250da5348899752b89e2ff7e3cd);
+        
+    
+            var icon_3601653a477045ec945f6faae66afaca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "darkpurple", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_654fc1e92d2349ad9bed4b51caaddcb3.setIcon(icon_3601653a477045ec945f6faae66afaca);
+        
+    
+        var popup_b3fb03376eb44a30b1fe0fd243d822fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a71d7287099e4023b280fb373910cd27 = $(`<div id="html_a71d7287099e4023b280fb373910cd27" style="width: 100.0%; height: 100.0%;"><strong>Clinics within 7 minute(s) of driving</strong>: DAVITA-WILSHIRE DIALYSIS CENTER at 1212 WILSHIRE BLVD.</div>`)[0];
+            popup_b3fb03376eb44a30b1fe0fd243d822fd.setContent(html_a71d7287099e4023b280fb373910cd27);
+        
+
+        marker_654fc1e92d2349ad9bed4b51caaddcb3.bindPopup(popup_b3fb03376eb44a30b1fe0fd243d822fd)
+        ;
+
+        
+    
+    
+            var marker_344f3f1323f64c4d89773618e070e8c0 = L.marker(
+                [34.0733763, -118.2761416],
+                {}
+            ).addTo(map_8abba250da5348899752b89e2ff7e3cd);
+        
+    
+            var icon_dd16e0245f8a41b589a37f7592c5c1da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "darkpurple", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_344f3f1323f64c4d89773618e070e8c0.setIcon(icon_dd16e0245f8a41b589a37f7592c5c1da);
+        
+    
+        var popup_abadf460a70042d6ac92e61813fbe22b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a70d03007bd0439f8d5186818832b83d = $(`<div id="html_a70d03007bd0439f8d5186818832b83d" style="width: 100.0%; height: 100.0%;"><strong>Clinics within 7 minute(s) of driving</strong>: DAVITA-SILVER LAKE DIALYSIS at 2723 W. TEMPLE STREET</div>`)[0];
+            popup_abadf460a70042d6ac92e61813fbe22b.setContent(html_a70d03007bd0439f8d5186818832b83d);
+        
+
+        marker_344f3f1323f64c4d89773618e070e8c0.bindPopup(popup_abadf460a70042d6ac92e61813fbe22b)
+        ;
+
+        
+    
+    
+            var marker_030f49ab7ab34ea98ad5aa20938aa3ac = L.marker(
+                [34.0639365, -118.27244180000001],
+                {}
+            ).addTo(map_8abba250da5348899752b89e2ff7e3cd);
+        
+    
+            var icon_544e830303d44f429afd8f61cad5b6bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "darkpurple", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_030f49ab7ab34ea98ad5aa20938aa3ac.setIcon(icon_544e830303d44f429afd8f61cad5b6bb);
+        
+    
+        var popup_5148e0a2e70c432385404021ed612c45 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5b677ee5fd64874a7c5de26701dff5a = $(`<div id="html_a5b677ee5fd64874a7c5de26701dff5a" style="width: 100.0%; height: 100.0%;"><strong>Clinics within 7 minute(s) of driving</strong>: ST. VINCENT DIALYSIS CENTER, INC. at 201 S. ALVARADO STREET, SUITE 220</div>`)[0];
+            popup_5148e0a2e70c432385404021ed612c45.setContent(html_a5b677ee5fd64874a7c5de26701dff5a);
+        
+
+        marker_030f49ab7ab34ea98ad5aa20938aa3ac.bindPopup(popup_5148e0a2e70c432385404021ed612c45)
+        ;
+
+        
+    
+    
+        function geo_json_81d2eb17cc3c4270bf4d012714bfa0c0_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#ffff00", "opacity": 1, "weight": 3};
+            }
+        }
+        function geo_json_81d2eb17cc3c4270bf4d012714bfa0c0_onEachFeature(feature, layer) {
+            layer.on({
+                click: function(e) {
+                    map_8abba250da5348899752b89e2ff7e3cd.fitBounds(e.target.getBounds());
+                }
+            });
+        };
+        var geo_json_81d2eb17cc3c4270bf4d012714bfa0c0 = L.geoJson(null, {
+                onEachFeature: geo_json_81d2eb17cc3c4270bf4d012714bfa0c0_onEachFeature,
+            
+                style: geo_json_81d2eb17cc3c4270bf4d012714bfa0c0_styler,
+        }).addTo(map_8abba250da5348899752b89e2ff7e3cd);
+            geo_json_81d2eb17cc3c4270bf4d012714bfa0c0.addData({"bbox": [-118.3016, 34.057714, -118.289999, 34.062093], "features": [{"bbox": [-118.3016, 34.057714, -118.289999, 34.062093], "geometry": {"coordinates": [[-118.289999, 34.059778], [-118.290311, 34.059777], [-118.290839, 34.059767], [-118.29103, 34.059767], [-118.29152, 34.059769], [-118.291649, 34.05977], [-118.291648, 34.059676], [-118.291645, 34.059375], [-118.291638, 34.058679], [-118.291634, 34.058116], [-118.291629, 34.057758], [-118.292264, 34.05773], [-118.292915, 34.057722], [-118.293519, 34.057725], [-118.294141, 34.057729], [-118.294774, 34.05773], [-118.295408, 34.057732], [-118.296555, 34.057727], [-118.297651, 34.05773], [-118.298711, 34.057721], [-118.299835, 34.057716], [-118.300907, 34.057714], [-118.300916, 34.059725], [-118.300917, 34.060333], [-118.300918, 34.060531], [-118.300918, 34.060575], [-118.300911, 34.060623], [-118.300907, 34.060655], [-118.300826, 34.060825], [-118.300775, 34.060887], [-118.300769, 34.060895], [-118.300684, 34.060992], [-118.300483, 34.061228], [-118.300419, 34.061336], [-118.30036, 34.061527], [-118.300371, 34.061745], [-118.300958, 34.061746], [-118.301597, 34.061744], [-118.3016, 34.062093]], "type": "LineString"}, "id": "0", "properties": {"segments": [{"distance": 1844.3, "duration": 186.0, "steps": [{"distance": 152.0, "duration": 28.8, "instruction": "Head west on West 7th Street", "name": "West 7th Street", "type": 11, "way_points": [0, 5]}, {"distance": 223.8, "duration": 29.5, "instruction": "Turn left onto South Vermont Avenue", "name": "South Vermont Avenue", "type": 0, "way_points": [5, 10]}, {"distance": 854.9, "duration": 65.7, "instruction": "Turn right onto West 8th Street", "name": "West 8th Street", "type": 1, "way_points": [10, 21]}, {"distance": 462.0, "duration": 37.1, "instruction": "Turn right onto Irolo Street", "name": "Irolo Street", "type": 1, "way_points": [21, 35]}, {"distance": 112.9, "duration": 20.3, "instruction": "Turn left onto Wilshire Boulevard", "name": "Wilshire Boulevard", "type": 0, "way_points": [35, 37]}, {"distance": 38.8, "duration": 4.7, "instruction": "Turn right onto South Ardmore Avenue", "name": "South Ardmore Avenue", "type": 1, "way_points": [37, 38]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at South Ardmore Avenue, on the left", "name": "-", "type": 10, "way_points": [38, 38]}]}], "summary": {"distance": 1844.3, "duration": 186.0}, "way_points": [0, 38]}, "type": "Feature"}], "metadata": {"attribution": "openrouteservice.org | OpenStreetMap contributors", "engine": {"build_date": "2019-05-29T14:58:37Z", "version": "5.0.1"}, "query": {"coordinates": [[-118.29, 34.06], [-118.30194679999998, 34.062090500000004]], "format": "geojson", "geometry": true, "instructions": true, "preference": "recommended", "profile": "driving-car"}, "service": "routing", "timestamp": 1562953863214}, "type": "FeatureCollection"});
+        
+    
+            var marker_111dc35f87444522a0a88057b283625c = L.marker(
+                [34.062090500000004, -118.30194679999998],
+                {}
+            ).addTo(map_8abba250da5348899752b89e2ff7e3cd);
+        
+    
+            var icon_03cc96c139b64500ad6b05962f5d70f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "darkpurple", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_111dc35f87444522a0a88057b283625c.setIcon(icon_03cc96c139b64500ad6b05962f5d70f4);
+        
+    
+        var popup_06ff9edaa4df424b89d3ae41bbe6d98a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d529057e44ad49e9b26e68ecc938f332 = $(`<div id="html_d529057e44ad49e9b26e68ecc938f332" style="width: 100.0%; height: 100.0%;"><strong>Clinics within 7 minute(s) of driving</strong>: FMC-DIALYSIS SERVICES OF MID-WILSHIRE at 3545 WILSHIRE BLVD., SUITE 100-103</div>`)[0];
+            popup_06ff9edaa4df424b89d3ae41bbe6d98a.setContent(html_d529057e44ad49e9b26e68ecc938f332);
+        
+
+        marker_111dc35f87444522a0a88057b283625c.bindPopup(popup_06ff9edaa4df424b89d3ae41bbe6d98a)
+        ;
+
+        
+    
+    
+        function geo_json_878a2aa7998944e598db1ecc6af3b994_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#ffff00", "opacity": 1, "weight": 3};
+            }
+        }
+        function geo_json_878a2aa7998944e598db1ecc6af3b994_onEachFeature(feature, layer) {
+            layer.on({
+                click: function(e) {
+                    map_8abba250da5348899752b89e2ff7e3cd.fitBounds(e.target.getBounds());
+                }
+            });
+        };
+        var geo_json_878a2aa7998944e598db1ecc6af3b994 = L.geoJson(null, {
+                onEachFeature: geo_json_878a2aa7998944e598db1ecc6af3b994_onEachFeature,
+            
+                style: geo_json_878a2aa7998944e598db1ecc6af3b994_styler,
+        }).addTo(map_8abba250da5348899752b89e2ff7e3cd);
+            geo_json_878a2aa7998944e598db1ecc6af3b994.addData({"bbox": [-118.289999, 34.053226, -118.265372, 34.060108], "features": [{"bbox": [-118.289999, 34.053226, -118.265372, 34.060108], "geometry": {"coordinates": [[-118.289999, 34.059778], [-118.289191, 34.05978], [-118.28909, 34.05978], [-118.289091, 34.058702], [-118.286901, 34.058711], [-118.286213, 34.058736], [-118.284196, 34.058735], [-118.284196, 34.059184], [-118.284074, 34.059135], [-118.283594, 34.058926], [-118.283522, 34.058889], [-118.2833, 34.059243], [-118.283266, 34.059368], [-118.282886, 34.059198], [-118.282411, 34.058986], [-118.282129, 34.058856], [-118.281602, 34.058619], [-118.28153, 34.058587], [-118.280884, 34.059587], [-118.280548, 34.060108], [-118.28015, 34.059928], [-118.279983, 34.059852], [-118.279743, 34.059744], [-118.279512, 34.059651], [-118.27934, 34.059612], [-118.279262, 34.059594], [-118.279139, 34.059581], [-118.279069, 34.059574], [-118.278545, 34.05951], [-118.278296, 34.059453], [-118.277713, 34.059261], [-118.277249, 34.059055], [-118.276812, 34.058777], [-118.276631, 34.058649], [-118.276468, 34.058507], [-118.276322, 34.058365], [-118.276168, 34.058194], [-118.275998, 34.058039], [-118.275888, 34.057963], [-118.275745, 34.05786], [-118.275495, 34.05775], [-118.275229, 34.057632], [-118.274681, 34.05739], [-118.274132, 34.057146], [-118.273592, 34.056907], [-118.273039, 34.056662], [-118.272788, 34.056551], [-118.272496, 34.056422], [-118.27226, 34.056317], [-118.27197, 34.056189], [-118.271911, 34.056163], [-118.271431, 34.055951], [-118.270704, 34.055629], [-118.270567, 34.055568], [-118.27015, 34.055383], [-118.269811, 34.05523], [-118.268863, 34.054799], [-118.268373, 34.054577], [-118.26815, 34.054476], [-118.266654, 34.053801], [-118.265372, 34.053226]], "type": "LineString"}, "id": "0", "properties": {"segments": [{"distance": 2816.9, "duration": 346.9, "steps": [{"distance": 85.5, "duration": 10.3, "instruction": "Head east on West 7th Street", "name": "West 7th Street", "type": 11, "way_points": [0, 2]}, {"distance": 119.9, "duration": 14.4, "instruction": "Turn right onto South Westmoreland Avenue", "name": "South Westmoreland Avenue", "type": 1, "way_points": [2, 3]}, {"distance": 450.9, "duration": 46.4, "instruction": "Turn left onto Leeward Avenue", "name": "Leeward Avenue", "type": 0, "way_points": [3, 6]}, {"distance": 49.9, "duration": 7.2, "instruction": "Turn left onto Hoover Street", "name": "Hoover Street", "type": 0, "way_points": [6, 7]}, {"distance": 70.2, "duration": 12.6, "instruction": "Turn sharp right", "name": "-", "type": 3, "way_points": [7, 10]}, {"distance": 58.5, "duration": 4.7, "instruction": "Turn left onto South Rampart Boulevard", "name": "South Rampart Boulevard", "type": 0, "way_points": [10, 12]}, {"distance": 182.0, "duration": 18.5, "instruction": "Turn sharp right onto West 7th Street", "name": "West 7th Street", "type": 3, "way_points": [12, 17]}, {"distance": 191.9, "duration": 23.0, "instruction": "Turn left onto South Carondelet Street", "name": "South Carondelet Street", "type": 0, "way_points": [17, 19]}, {"distance": 1608.0, "duration": 209.8, "instruction": "Turn right onto Wilshire Boulevard", "name": "Wilshire Boulevard", "type": 1, "way_points": [19, 60]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at Wilshire Boulevard, on the right", "name": "-", "type": 10, "way_points": [60, 60]}]}], "summary": {"distance": 2816.9, "duration": 346.9}, "way_points": [0, 60]}, "type": "Feature"}], "metadata": {"attribution": "openrouteservice.org | OpenStreetMap contributors", "engine": {"build_date": "2019-05-29T14:22:56Z", "version": "5.0.1"}, "query": {"coordinates": [[-118.29, 34.06], [-118.2655215, 34.052997399999995]], "format": "geojson", "geometry": true, "instructions": true, "preference": "recommended", "profile": "driving-car"}, "service": "routing", "timestamp": 1562953863496}, "type": "FeatureCollection"});
+        
+    
+            var marker_303fce4c34354b018c733116cd5e2c88 = L.marker(
+                [34.052997399999995, -118.2655215],
+                {}
+            ).addTo(map_8abba250da5348899752b89e2ff7e3cd);
+        
+    
+            var icon_0c1c3d27b6b849e0b1a93d74702e49be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "darkpurple", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_303fce4c34354b018c733116cd5e2c88.setIcon(icon_0c1c3d27b6b849e0b1a93d74702e49be);
+        
+    
+        var popup_fcc13fc8e7714cbaa023474558d45e76 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7272c2d0b2d4ad4b8557cd65fa1f0ad = $(`<div id="html_c7272c2d0b2d4ad4b8557cd65fa1f0ad" style="width: 100.0%; height: 100.0%;"><strong>Clinics within 7 minute(s) of driving</strong>: DAVITA-WILSHIRE DIALYSIS CENTER at 1212 WILSHIRE BLVD.</div>`)[0];
+            popup_fcc13fc8e7714cbaa023474558d45e76.setContent(html_c7272c2d0b2d4ad4b8557cd65fa1f0ad);
+        
+
+        marker_303fce4c34354b018c733116cd5e2c88.bindPopup(popup_fcc13fc8e7714cbaa023474558d45e76)
+        ;
+
+        
+    
+    
+        function geo_json_dd5cd4c35e34454f82232957c082f5cc_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#ffff00", "opacity": 1, "weight": 3};
+            }
+        }
+        function geo_json_dd5cd4c35e34454f82232957c082f5cc_onEachFeature(feature, layer) {
+            layer.on({
+                click: function(e) {
+                    map_8abba250da5348899752b89e2ff7e3cd.fitBounds(e.target.getBounds());
+                }
+            });
+        };
+        var geo_json_dd5cd4c35e34454f82232957c082f5cc = L.geoJson(null, {
+                onEachFeature: geo_json_dd5cd4c35e34454f82232957c082f5cc_onEachFeature,
+            
+                style: geo_json_dd5cd4c35e34454f82232957c082f5cc_styler,
+        }).addTo(map_8abba250da5348899752b89e2ff7e3cd);
+            geo_json_dd5cd4c35e34454f82232957c082f5cc.addData({"bbox": [-118.289999, 34.058702, -118.274876, 34.073136], "features": [{"bbox": [-118.289999, 34.058702, -118.274876, 34.073136], "geometry": {"coordinates": [[-118.289999, 34.059778], [-118.289191, 34.05978], [-118.28909, 34.05978], [-118.289091, 34.058702], [-118.286901, 34.058711], [-118.286213, 34.058736], [-118.284196, 34.058735], [-118.284196, 34.059184], [-118.284074, 34.059135], [-118.283594, 34.058926], [-118.283522, 34.058889], [-118.2833, 34.059243], [-118.283266, 34.059368], [-118.283233, 34.059501], [-118.282664, 34.060382], [-118.282324, 34.06091], [-118.281979, 34.061443], [-118.281472, 34.062214], [-118.281342, 34.062413], [-118.281097, 34.062787], [-118.281026, 34.062895], [-118.280984, 34.06296], [-118.280882, 34.063122], [-118.279991, 34.064525], [-118.279751, 34.064904], [-118.279456, 34.065361], [-118.279363, 34.065505], [-118.279116, 34.065887], [-118.278992, 34.066074], [-118.278876, 34.06625], [-118.277469, 34.068479], [-118.277041, 34.069145], [-118.276819, 34.069492], [-118.27588, 34.070965], [-118.274876, 34.072533], [-118.275184, 34.072657], [-118.275307, 34.072706], [-118.275737, 34.072888], [-118.276297, 34.073136]], "type": "LineString"}, "id": "0", "properties": {"segments": [{"distance": 2638.2, "duration": 275.5, "steps": [{"distance": 85.5, "duration": 10.3, "instruction": "Head east on West 7th Street", "name": "West 7th Street", "type": 11, "way_points": [0, 2]}, {"distance": 119.9, "duration": 14.4, "instruction": "Turn right onto South Westmoreland Avenue", "name": "South Westmoreland Avenue", "type": 1, "way_points": [2, 3]}, {"distance": 450.9, "duration": 46.4, "instruction": "Turn left onto Leeward Avenue", "name": "Leeward Avenue", "type": 0, "way_points": [3, 6]}, {"distance": 49.9, "duration": 7.2, "instruction": "Turn left onto Hoover Street", "name": "Hoover Street", "type": 0, "way_points": [6, 7]}, {"distance": 70.2, "duration": 12.6, "instruction": "Turn sharp right", "name": "-", "type": 3, "way_points": [7, 10]}, {"distance": 1714.6, "duration": 171.4, "instruction": "Turn left onto South Rampart Boulevard", "name": "South Rampart Boulevard", "type": 0, "way_points": [10, 34]}, {"distance": 147.1, "duration": 13.2, "instruction": "Turn left onto Temple Street", "name": "Temple Street", "type": 0, "way_points": [34, 38]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at Temple Street, on the right", "name": "-", "type": 10, "way_points": [38, 38]}]}], "summary": {"distance": 2638.2, "duration": 275.5}, "way_points": [0, 38]}, "type": "Feature"}], "metadata": {"attribution": "openrouteservice.org | OpenStreetMap contributors", "engine": {"build_date": "2019-05-29T14:58:37Z", "version": "5.0.1"}, "query": {"coordinates": [[-118.29, 34.06], [-118.2761416, 34.0733763]], "format": "geojson", "geometry": true, "instructions": true, "preference": "recommended", "profile": "driving-car"}, "service": "routing", "timestamp": 1562953863790}, "type": "FeatureCollection"});
+        
+    
+            var marker_1fc5a7a5a1944c6f9e147270a6586a67 = L.marker(
+                [34.0733763, -118.2761416],
+                {}
+            ).addTo(map_8abba250da5348899752b89e2ff7e3cd);
+        
+    
+            var icon_a856aa396a0149fa808f769aacdd047b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "darkpurple", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_1fc5a7a5a1944c6f9e147270a6586a67.setIcon(icon_a856aa396a0149fa808f769aacdd047b);
+        
+    
+        var popup_1ed24f8d6447403b80fc501a6a89c027 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1950953684c24c169a467cb73826225e = $(`<div id="html_1950953684c24c169a467cb73826225e" style="width: 100.0%; height: 100.0%;"><strong>Clinics within 7 minute(s) of driving</strong>: DAVITA-SILVER LAKE DIALYSIS at 2723 W. TEMPLE STREET</div>`)[0];
+            popup_1ed24f8d6447403b80fc501a6a89c027.setContent(html_1950953684c24c169a467cb73826225e);
+        
+
+        marker_1fc5a7a5a1944c6f9e147270a6586a67.bindPopup(popup_1ed24f8d6447403b80fc501a6a89c027)
+        ;
+
+        
+    
+    
+        function geo_json_9b803038e0d94c0a9379a194aa8174c4_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#ffff00", "opacity": 1, "weight": 3};
+            }
+        }
+        function geo_json_9b803038e0d94c0a9379a194aa8174c4_onEachFeature(feature, layer) {
+            layer.on({
+                click: function(e) {
+                    map_8abba250da5348899752b89e2ff7e3cd.fitBounds(e.target.getBounds());
+                }
+            });
+        };
+        var geo_json_9b803038e0d94c0a9379a194aa8174c4 = L.geoJson(null, {
+                onEachFeature: geo_json_9b803038e0d94c0a9379a194aa8174c4_onEachFeature,
+            
+                style: geo_json_9b803038e0d94c0a9379a194aa8174c4_styler,
+        }).addTo(map_8abba250da5348899752b89e2ff7e3cd);
+            geo_json_9b803038e0d94c0a9379a194aa8174c4.addData({"bbox": [-118.289999, 34.058702, -118.272147, 34.063811], "features": [{"bbox": [-118.289999, 34.058702, -118.272147, 34.063811], "geometry": {"coordinates": [[-118.289999, 34.059778], [-118.289191, 34.05978], [-118.28909, 34.05978], [-118.289091, 34.058702], [-118.286901, 34.058711], [-118.286213, 34.058736], [-118.284196, 34.058735], [-118.284196, 34.059184], [-118.284074, 34.059135], [-118.283594, 34.058926], [-118.283522, 34.058889], [-118.2833, 34.059243], [-118.283266, 34.059368], [-118.283233, 34.059501], [-118.282664, 34.060382], [-118.282324, 34.06091], [-118.281979, 34.061443], [-118.281472, 34.062214], [-118.281342, 34.062413], [-118.280977, 34.062251], [-118.28042, 34.062001], [-118.279563, 34.061614], [-118.278996, 34.061367], [-118.278523, 34.061155], [-118.278415, 34.061107], [-118.278229, 34.061024], [-118.277986, 34.060916], [-118.276966, 34.06046], [-118.27617, 34.060102], [-118.276071, 34.060058], [-118.27551, 34.05981], [-118.275027, 34.059597], [-118.274881, 34.059532], [-118.273769, 34.061277], [-118.272937, 34.062556], [-118.272679, 34.062952], [-118.272444, 34.063333], [-118.272147, 34.063811]], "type": "LineString"}, "id": "0", "properties": {"segments": [{"distance": 2432.1, "duration": 249.6, "steps": [{"distance": 85.5, "duration": 10.3, "instruction": "Head east on West 7th Street", "name": "West 7th Street", "type": 11, "way_points": [0, 2]}, {"distance": 119.9, "duration": 14.4, "instruction": "Turn right onto South Westmoreland Avenue", "name": "South Westmoreland Avenue", "type": 1, "way_points": [2, 3]}, {"distance": 450.9, "duration": 46.4, "instruction": "Turn left onto Leeward Avenue", "name": "Leeward Avenue", "type": 0, "way_points": [3, 6]}, {"distance": 49.9, "duration": 7.2, "instruction": "Turn left onto Hoover Street", "name": "Hoover Street", "type": 0, "way_points": [6, 7]}, {"distance": 70.2, "duration": 12.6, "instruction": "Turn sharp right", "name": "-", "type": 3, "way_points": [7, 10]}, {"distance": 441.4, "duration": 39.3, "instruction": "Turn left onto South Rampart Boulevard", "name": "South Rampart Boulevard", "type": 0, "way_points": [10, 18]}, {"distance": 675.9, "duration": 71.9, "instruction": "Turn right onto West 6th Street", "name": "West 6th Street", "type": 1, "way_points": [18, 32]}, {"distance": 538.3, "duration": 47.5, "instruction": "Turn left onto Alvarado Street", "name": "Alvarado Street", "type": 0, "way_points": [32, 37]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at Alvarado Street, on the left", "name": "-", "type": 10, "way_points": [37, 37]}]}], "summary": {"distance": 2432.1, "duration": 249.6}, "way_points": [0, 37]}, "type": "Feature"}], "metadata": {"attribution": "openrouteservice.org | OpenStreetMap contributors", "engine": {"build_date": "2019-05-29T14:22:56Z", "version": "5.0.1"}, "query": {"coordinates": [[-118.29, 34.06], [-118.27244180000001, 34.0639365]], "format": "geojson", "geometry": true, "instructions": true, "preference": "recommended", "profile": "driving-car"}, "service": "routing", "timestamp": 1562953864003}, "type": "FeatureCollection"});
+        
+    
+            var marker_8711c4ff58e44fcaad4ac1adb3f9e313 = L.marker(
+                [34.0639365, -118.27244180000001],
+                {}
+            ).addTo(map_8abba250da5348899752b89e2ff7e3cd);
+        
+    
+            var icon_7d3557309f064372bdb63dd1d186b641 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "darkpurple", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_8711c4ff58e44fcaad4ac1adb3f9e313.setIcon(icon_7d3557309f064372bdb63dd1d186b641);
+        
+    
+        var popup_0596884e78694d12b7b66b456a0c2eb6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0d6d53b2bb346488b4c6ff1d502f1dc = $(`<div id="html_a0d6d53b2bb346488b4c6ff1d502f1dc" style="width: 100.0%; height: 100.0%;"><strong>Clinics within 7 minute(s) of driving</strong>: ST. VINCENT DIALYSIS CENTER, INC. at 201 S. ALVARADO STREET, SUITE 220</div>`)[0];
+            popup_0596884e78694d12b7b66b456a0c2eb6.setContent(html_a0d6d53b2bb346488b4c6ff1d502f1dc);
+        
+
+        marker_8711c4ff58e44fcaad4ac1adb3f9e313.bindPopup(popup_0596884e78694d12b7b66b456a0c2eb6)
+        ;
+
+        
+    
+</script>
